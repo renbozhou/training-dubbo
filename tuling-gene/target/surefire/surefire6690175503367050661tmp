@@ -1,0 +1,26 @@
+#surefire
+#Tue Nov 07 17:25:34 CST 2017
+classPathUrl.4=C\:\\Users\\Administrator\\.m2\\repository\\javax\\servlet\\javax.servlet-api\\3.1.0\\javax.servlet-api-3.1.0.jar
+testSuiteDefinitionTestSourceDirectory=C\:\\workspace\\tuling-gene\\src\\test\\java
+includes1=**/*Test.java
+includes2=**/*TestCase.java
+runOrder=filesystem
+includes0=**/Test*.java
+reportsDirectory=C\:\\workspace\\tuling-gene\\target\\surefire-reports
+tc.0=com.tuling.UserServiceTest
+surefireClassPathUrl.0=C\:\\Users\\Administrator\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit4\\2.12.4\\surefire-junit4-2.12.4.jar
+classPathUrl.0=C\:\\workspace\\tuling-gene\\target\\test-classes
+classPathUrl.1=C\:\\workspace\\tuling-gene\\target\\classes
+classPathUrl.2=C\:\\Users\\Administrator\\.m2\\repository\\junit\\junit\\4.12\\junit-4.12.jar
+classPathUrl.3=C\:\\Users\\Administrator\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar
+testClassesDirectory=C\:\\workspace\\tuling-gene\\target\\test-classes
+useManifestOnlyJar=true
+runStatisticsFile=C\:\\workspace\\tuling-gene\\.surefire-784D90C8EECD9868C88900F43260C8E62D67D323
+providerConfiguration=org.apache.maven.surefire.junit4.JUnit4Provider
+failIfNoTests=false
+isTrimStackTrace=true
+surefireClassPathUrl.1=C\:\\Users\\Administrator\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.12.4\\surefire-api-2.12.4.jar
+excludes0=**/*$*
+enableAssertions=true
+childDelegation=false
+useSystemClassLoader=true

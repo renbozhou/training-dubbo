@@ -1,0 +1,74 @@
+﻿<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lenovo</groupId>
+  <artifactId>testtuling-parent</artifactId>
+  <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+   <modules>
+    <module>../tuling-gene</module>
+    <module>../tuling-gene-dao</module>
+    <module>../tuling-gene-service</module>
+  </modules>
+    <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.9</maven.compiler.source>
+        <maven.compiler.target>1.9</maven.compiler.target>
+    </properties>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>nexus-snapshots</name>
+            <layout>default</layout>
+            <url>http://10.120.16.45:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <build>
+        <plugins>
+            <!--
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-rar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <includeJar>false</includeJar>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>buildRar</id>
+                        <phase>process-resources</phase>
+                        <goals><goal>rar</goal></goals>
+                    </execution>
+                </executions>
+            </plugin>
+-->
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>sql-maven-plugin</artifactId>
+
+
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>5.1.40</version>
+                    </dependency>
+                </dependencies>
+
+                <configuration>
+                    <driever>com.mysql.jdbc.Driver</driever>
+                    <url>jdbc:mysql://10.120.16.47:3306</url>
+                    <username>root</username>
+                    <password>741741</password>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--定义snapshots库和releases库的nexus地址-->
+
+
+
+</project>

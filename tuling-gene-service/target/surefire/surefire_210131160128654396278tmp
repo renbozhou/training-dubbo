@@ -1,0 +1,6 @@
+#surefire_2
+#Tue Nov 07 12:40:27 CST 2017
+basedir=C\:\\workspace\\tuling-gene-service
+altDeploymentRepository=nexus-snapshots\:\:default\:\:http\://10.120.16.45\:8081/nexus/content/repositories/snapshots
+user.dir=C\:\\workspace\\tuling-gene-service
+localRepository=C\:\\Users\\Administrator\\.m2\\repository
